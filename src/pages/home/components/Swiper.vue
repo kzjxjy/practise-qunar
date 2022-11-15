@@ -20,10 +20,10 @@ export default {
       },
       swiperList: [{
         id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/2104/c6/c6d76981ae21f58ea3.water.jpg_600x330_581fd255.jpg'
+        imgUrl: 'https://imgs.qunarzz.com/tuan/team2/1507/2c/83e0e0e7ae082a.jpg_640x276_212dcff9.jpg'
       }, {
         id: '0002',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/2005/4a/4ae86ceefd441536a3.water.jpg_600x330_745eff14.jpg'
+        imgUrl: 'https://imgs.qunarzz.com/sight/p0/1603/fb/fb925132e196da9c90.water.jpg_640x276_eaf4b5a3.jpg'
       }]
     }
   }
