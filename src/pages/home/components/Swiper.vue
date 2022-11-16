@@ -4,7 +4,7 @@
             <swiper-slide v-for="item of swiperList" :key="item.id">
                 <img class="swiper-img" :src="item.imgUrl" />
             </swiper-slide>
-            <div class="swiper-pagination"  slot="pagination"></div>
+            <!-- <div class="swiper-pagination"  slot="pagination"></div> -->
         </swiper>
     </div>
 </template>
@@ -20,10 +20,10 @@ export default {
       },
       swiperList: [{
         id: '0001',
-        imgUrl: 'https://imgs.qunarzz.com/tuan/team2/1507/2c/83e0e0e7ae082a.jpg_640x276_212dcff9.jpg'
+        imgUrl: 'https://imgs.qunarzz.com/sight/source/1505/7d/df6ff468331c43.jpg_r_640x214_1f3783d0.jpg'
       }, {
         id: '0002',
-        imgUrl: 'https://imgs.qunarzz.com/sight/p0/1603/fb/fb925132e196da9c90.water.jpg_640x276_eaf4b5a3.jpg'
+        imgUrl: 'https://imgs.qunarzz.com/sight/source/1509/41/0a74389a026adc.jpg_r_640x214_5ad7add7.jpg'
       }]
     }
   }
@@ -31,7 +31,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.wrapper >>> .swiper-pagination-bullet-active
+  .wrapper >>> .swiper-pagination-bullet-active
     background: #fff
   .wrapper
     overflow: hidden
