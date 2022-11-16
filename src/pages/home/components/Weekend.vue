@@ -2,7 +2,7 @@
   <div>
     <div class="title">周末去哪儿</div>
     <ul>
-        <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+        <li class="item border-bottom" v-for="item of list" :key="item.id">
             <div class="item-img-wrapper">
                 <img :src="item.imgUrl" class="item-img">
             </div>
@@ -18,25 +18,8 @@
 <script>
 export default {
   name: 'HomeWeekend',
-  data () {
-    return {
-      recommendList: [{
-        id: '0001',
-        imgUrl: 'https://imgs.qunarzz.com/sight/source/1505/7d/df6ff468331c43.jpg_r_640x214_1f3783d0.jpg',
-        title: '上海必打卡',
-        desc: '中西合璧，现代和传统各有各的精彩'
-      }, {
-        id: '0002',
-        imgUrl: 'https://imgs.qunarzz.com/sight/source/1511/ea/7f43191b747bb9.jpg_r_640x214_f58e829d.jpg',
-        title: '上海泡汤胜地',
-        desc: '上海的朋友总会问，哪里可以泡温泉，哪里的温泉好呢？这里有最好最全的上海温泉'
-      }, {
-        id: '0003',
-        imgUrl: 'https://imgs.qunarzz.com/sight/source/1509/41/0a74389a026adc.jpg_r_640x214_5ad7add7.jpg',
-        title: '上海赏秋攻略',
-        desc: '上海的秋天，哪里都是美美哒'
-      }]
-    }
+  props: {
+    list: Array
   }
 }
 </script>
@@ -47,11 +30,10 @@ export default {
   line-height: .8rem
   background: #eee
   text-indent: .2rem
-  margin-top: .2rem
 .item-img-wrapper
     overflow: hidden
     height: 0
-    padding-bottom: 33.9%
+    padding-bottom: 37.09%
     .item-img
         width: 100%
 .item-info

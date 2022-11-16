@@ -2,7 +2,7 @@
   <div>
     <div class="title">热销推荐</div>
     <ul>
-        <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+        <li class="item border-bottom" v-for="item of list" :key="item.id">
                 <img :src="item.imgUrl" class="item-img">
             <div class="item-info">
                 <p class="item-title">{{item.title}}</p>
@@ -17,25 +17,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data () {
-    return {
-      recommendList: [{
-        id: '0001',
-        imgUrl: 'https://imgs.qunarzz.com/sight/p0/2005/9e/9e643f96c84b5c2ea3.water.jpg_200x200_2a3eef5b.jpg',
-        title: '上海欢乐谷',
-        desc: '上海市松江区佘山镇林湖路888号'
-      }, {
-        id: '0002',
-        imgUrl: 'https://imgs.qunarzz.com/sight/p0/2005/9e/9e643f96c84b5c2ea3.water.jpg_200x200_2a3eef5b.jpg',
-        title: '上海欢乐谷',
-        desc: '上海市松江区佘山镇林湖路888号'
-      }, {
-        id: '0003',
-        imgUrl: 'https://imgs.qunarzz.com/sight/p0/2005/9e/9e643f96c84b5c2ea3.water.jpg_200x200_2a3eef5b.jpg',
-        title: '上海欢乐谷',
-        desc: '上海市松江区佘山镇林湖路888号'
-      }]
-    }
+  props: {
+    list: Array
   }
 }
 </script>
